@@ -9,7 +9,6 @@ import javax.annotation.PostConstruct;
 import java.util.ArrayList;
 import java.util.List;
 
-@Component
 public class Data {
     Employee tony = new Employee(1,"Tony","Thomas",28, "Melbourne");
     Employee nila = new Employee(2,"Nila","Manoj",26, "Mumbai");
@@ -18,19 +17,19 @@ public class Data {
 
     ArrayList<Employee> allEmployees = new ArrayList<>();
 
-    @PostConstruct
-    public void init(){
-        allEmployees.add(tony);
-        allEmployees.add(nila);
-        allEmployees.add(thanseeh);
-        allEmployees.add(cyriac);
-    }
-
-    public List<Employee> getAllEmployees(){
+//    @PostConstruct
+//    public void init(){
 //        allEmployees.add(tony);
 //        allEmployees.add(nila);
 //        allEmployees.add(thanseeh);
 //        allEmployees.add(cyriac);
+//    }
+
+    public List<Employee> getAllEmployees(){
+        allEmployees.add(tony);
+        allEmployees.add(nila);
+        allEmployees.add(thanseeh);
+        allEmployees.add(cyriac);
         return allEmployees;
     }
 }

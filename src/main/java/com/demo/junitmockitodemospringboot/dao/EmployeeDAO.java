@@ -11,8 +11,7 @@ import java.util.Optional;
 @Component
 public class EmployeeDAO {
 
-    @Autowired
-    public Data data;
+    public Data data = new Data();
 
     public Employee getEmployeeById(int id){
         List<Employee> employees = data.getAllEmployees();
