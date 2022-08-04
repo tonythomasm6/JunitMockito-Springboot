@@ -1,0 +1,5 @@
+-- INSERT INTO EMPLOYEE VALUES(1,"Tony","Thomas",28, "Melbourne");
+-- INSERT INTO EMPLOYEE VALUES(2,"Nila","Manoj",26, "Mumbai");
+-- INSERT INTO EMPLOYEE VALUES(3,"Thanseeh","BH",29, "Dubai");
+-- INSERT INTO EMPLOYEE VALUES(4,"Cyriac","Thomas",22, "ACT");
+--

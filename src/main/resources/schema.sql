@@ -1,0 +1,8 @@
+-- DROP TABLE IF EXISTS EMPLOYEE;
+-- CREATE TABLE EMPLOYEE(
+--     employee_id INT AUTO_INCREMENT PRIMARY KEY,
+--     employee_firstName VARCHAR(50) NOT NULL,
+--     employee_lastName VARCHAR(50) NOT NULL,
+--     employee_age INT NOT NULL,
+--     employee_location VARCHAR(50) NOT NULL
+-- );
