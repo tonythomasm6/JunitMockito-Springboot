@@ -7,8 +7,8 @@ import lombok.Setter;
 @Setter
 public class EmployeeException extends  RuntimeException{
 
-    private int errorCode;
-    private String description;
+    private final int errorCode;
+    private final String description;
 
     public EmployeeException(int errorCode, String description){
         this.errorCode = errorCode;

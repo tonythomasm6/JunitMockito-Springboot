@@ -1,5 +1,8 @@
 package com.demo.junitmockitodemospringboot.filter;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import javax.servlet.*;
 import javax.servlet.http.HttpServletRequest;
 import java.io.BufferedWriter;
@@ -9,6 +12,7 @@ import java.sql.Timestamp;
 
 public class RequestFilter implements Filter {
 
+    Logger logger = LoggerFactory.getLogger(RequestFilter.class);
 
     @Override
     public void doFilter(ServletRequest servletRequest, ServletResponse servletResponse, FilterChain filterChain) throws IOException, ServletException {
@@ -25,9 +29,9 @@ public class RequestFilter implements Filter {
             BufferedWriter writer = new BufferedWriter(new FileWriter("Log", true));
             writer.append("\n");
             writer.append(time + " :::: " + data);
-            writer.close();
+
         }catch(IOException ex){
-            System.out.println("Exception caught::: "+ex.getMessage());
+            logger.error("Exception caught::: {} " , ex.getMessage());
         }
     }
 }

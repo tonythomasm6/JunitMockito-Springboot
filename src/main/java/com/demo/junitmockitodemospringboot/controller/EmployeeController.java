@@ -1,8 +1,7 @@
 package com.demo.junitmockitodemospringboot.controller;
 
-import com.demo.junitmockitodemospringboot.Model.Employee;
-import com.demo.junitmockitodemospringboot.Service.EmployeeService;
-import com.demo.junitmockitodemospringboot.dao.EmployeeDAO;
+import com.demo.junitmockitodemospringboot.model.Employee;
+import com.demo.junitmockitodemospringboot.service.EmployeeService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;

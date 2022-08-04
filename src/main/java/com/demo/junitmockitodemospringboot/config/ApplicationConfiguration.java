@@ -9,6 +9,7 @@ import org.springframework.context.annotation.Configuration;
 //Implement h2
 //Reactive programming
 //Log4j
+//Global Exception handler
 
 @Configuration
 public class ApplicationConfiguration {

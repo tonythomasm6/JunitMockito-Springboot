@@ -1,8 +1,8 @@
 package com.demo.junitmockitodemospringboot.controller;
 
 import static org.junit.jupiter.api.Assertions.*;
-import com.demo.junitmockitodemospringboot.Model.Employee;
-import com.demo.junitmockitodemospringboot.Service.EmployeeService;
+import com.demo.junitmockitodemospringboot.model.Employee;
+import com.demo.junitmockitodemospringboot.service.EmployeeService;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
@@ -31,7 +31,7 @@ public class EmployeeControllerTest {
     public void testGetEmployeeById() throws Exception {
 
         when(employeeService.getEmployeeById(1)).thenReturn( new Employee(1,"Tony","Thomas",28, "Melbourne"));
-        MvcResult result = (MvcResult) mvc.perform( MockMvcRequestBuilders
+        MvcResult result = mvc.perform( MockMvcRequestBuilders
                         .get("/employee/getById")
                         .param("id","1")
                         .accept(MediaType.ALL))

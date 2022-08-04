@@ -1,6 +1,6 @@
 package com.demo.junitmockitodemospringboot.repository;
 
-import com.demo.junitmockitodemospringboot.Model.Employee;
+import com.demo.junitmockitodemospringboot.model.Employee;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

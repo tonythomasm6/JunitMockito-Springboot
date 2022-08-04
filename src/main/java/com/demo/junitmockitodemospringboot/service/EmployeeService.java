@@ -1,11 +1,9 @@
-package com.demo.junitmockitodemospringboot.Service;
+package com.demo.junitmockitodemospringboot.service;
 
-import com.demo.junitmockitodemospringboot.Model.Employee;
+import com.demo.junitmockitodemospringboot.model.Employee;
 import com.demo.junitmockitodemospringboot.dao.EmployeeDAO;
 import com.demo.junitmockitodemospringboot.exception.EmployeeException;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpStatus;
-import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

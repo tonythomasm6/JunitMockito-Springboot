@@ -3,8 +3,7 @@ package com.demo.junitmockitodemospringboot.dao;
 import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.Mockito.when;
 
-import com.demo.junitmockitodemospringboot.Model.Employee;
-import com.demo.junitmockitodemospringboot.Service.EmployeeService;
+import com.demo.junitmockitodemospringboot.model.Employee;
 import com.demo.junitmockitodemospringboot.repository.EmployeeRepository;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
