@@ -1,0 +1,18 @@
+package com.demo.junitmockitodemospringboot.exception;
+
+import lombok.Getter;
+import lombok.Setter;
+
+@Getter
+@Setter
+public class EmployeeException extends  RuntimeException{
+
+    private int errorCode;
+    private String description;
+
+    public EmployeeException(int errorCode, String description){
+        this.errorCode = errorCode;
+        this.description = description;
+    }
+
+}
